@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: green;
+}
+
+header {
+  font-family: fantasy;
+  height: 100px;
+  text-align: center;
+}
+
+.side-of-game {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sad-cat {
+  width: 200px;
+  height: auto;
+
+  padding-top: 20px;
+}
+
+#cat-msg {
+  text-align: center;
+  color: whitesmoke;
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+.memory-game {
+  width: 640px;
+  height: 640px;
+  perspective: 1000px;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  /* border: 2px dotted white; */
+}
+
+.memory-card {
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  width: calc(25% - 10px);
+  height: calc(33% - 10px);
+  position: relative;
+  margin: 5px;
+  opacity: 1;
+  /* transition: opacity 2s linear; */
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform 0.15s;
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  position: absolute;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  /* border: 2px solid deeppink; */
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 2s linear;
+}
+
+/* .fade-out {
+    animation: fadeOut ease 2s;
+    -webkit-animation: fadeOut ease 2s;
+    -moz-animation: fadeOut ease 2s;
+    -o-animation: fadeOut ease 2s;
+    -ms-animation: fadeOut ease 2s;
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-moz-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-webkit-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-o-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-ms-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+  } */
