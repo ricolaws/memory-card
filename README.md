@@ -18,9 +18,9 @@
 
 - [Overview](#overview)
   - [Built With](#built-with)
+- [Features](#features)
 - [How to Play](#how-to-play)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 <!-- OVERVIEW -->
 
