@@ -9,14 +9,6 @@
     <a href="https://boring-poitras-025549.netlify.app">
       Demo
     </a>
-    <span> | </span>
-    <a href="https://boring-poitras-025549.netlify.app">
-      Solution
-    </a>
-    <span> | </span>
-    <a href="https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U">
-      Challenge
-    </a>
   </h3>
 </div>
 
@@ -34,7 +26,7 @@
 
 ## Overview
 
-
+![Screen Shot 2021-09-27 at 11 45 38 AM](https://user-images.githubusercontent.com/41934323/134967195-3034407d-533e-470f-986d-8c9be85c01a0.png)
 
 - This is my version of the card game "memory", built in vanilla JS.
 - I used this as an opportunity to implement some game logic in JS, try out a technique for scrolling text, and to experiment with 3D CSS. 
